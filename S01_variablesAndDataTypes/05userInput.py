@@ -35,11 +35,11 @@ def ejemplo_opcion(op: Optional[str] = None) -> None:
     Si `op` es None pedirá la opción; acepta 'a' o 'r' (insensible a mayúsculas).
     """
     if op is None:
-        op = input("Elige una opción — (a)cpetar / (r)echazar: ")
+        op = input("Elige una opción — (a)ceptar / (r)echazar: ")
     o = op.strip().lower()
     if o == 'a' or o == 'aceptar':
         print('Has aceptado.')
-    elif o == 'r' or o == 'rechazar':
+    elif o == 'r' or o == 'rechazar': # else if
         print('Has rechazado.')
     else:
         print('Opción no reconocida:', op)

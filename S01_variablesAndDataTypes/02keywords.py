@@ -8,8 +8,9 @@ If we use any of them, Python throws an error.
 #     pass
 # SyntaxError: invalid sintax
 
+
 # Use of Python function list() to create a list from the string
-a = list("Letras")
+a = list("Letras") # list o listas en Python es lo mismo que un array[] en otro lenguajes de programación
 print(a)
 
 # Python let us use of 'list' as a fucntion name; in that case, the built-in function list is shadowed by our own function declaration
