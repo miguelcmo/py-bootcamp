@@ -18,8 +18,8 @@ def ejemplo_tuple_creacion_acceso():
 
 def ejemplo_tuple_unpack_immutabilidad():
 	"""Ejemplo 2: desempaquetado y mostrar inmutabilidad"""
-	point: Tuple[int, int] = (10, 20)
-	x, y = point  # unpacking
+	point: Tuple[int, int, int] = (10, 20, 30)
+	x, y, z = point  # unpacking
 	print('\nEjemplo 2 — unpacking y inmutabilidad:')
 	print('  point =', point)
 	print('  x =', x, ', y =', y)

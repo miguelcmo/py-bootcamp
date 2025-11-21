@@ -10,10 +10,10 @@ def ejemplo_creacion_acceso():
 	frutas = ['manzana', 'banana', 'cereza', 'datil']
 	print('\nEjemplo 1 — creación y acceso:')
 	print('  lista completa:', frutas)
-	print('  primer elemento:', frutas[0])
-	print('  último elemento (index -1):', frutas[-1])
-	print('  longitud:', len(frutas))
-	print('  contiene "banana"?', 'banana' in frutas)
+	print('  primer elemento:', frutas[1])
+	print('  último elemento (index -1):', frutas[-2])
+	print('  longitud:', len(frutas)) # metodos de listas len() - lenght=logitud
+	print('  contiene "banana"?', 'banana' in frutas) # elemento in lista
 
 
 def ejemplo_modificacion():
@@ -21,7 +21,7 @@ def ejemplo_modificacion():
 	nums = [1, 2, 3]
 	print('\nEjemplo 2 — modificación:')
 	print('  inicial:', nums)
-	nums.append(4)
+	nums.append(4) # nombre_de_la_variable.metodo() notacion de OOP - POO
 	print('  after append(4):', nums)
 	nums.extend([5, 6])
 	print('  after extend([5,6]):', nums)

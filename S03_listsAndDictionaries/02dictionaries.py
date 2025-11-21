@@ -24,7 +24,7 @@ def ejemplo_agregar_actualizar_eliminar():
 	print('  after add c=3:', d)
 	d['a'] = 10  # actualizar
 	print('  after update a=10:', d)
-	v = d.pop('b')  # eliminar y devolver
+	v = d.pop('b')  # eliminar y devolver # d.pop('b')
 	print('  pop b ->', v, '; ahora:', d)
 	# eliminar con del
 	del d['c']
