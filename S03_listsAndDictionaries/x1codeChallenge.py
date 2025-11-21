@@ -25,7 +25,7 @@ def agregar_contacto(contactos):
 def mostrar_contactos(contactos):
     print("\nLista de contactos:")
     for c in contactos:
-        print(f'Nombre: {c['nombre']} - Telefono: {c['telefono']}') # format (formato de texto)
+        print(f"Nombre: {c['nombre']} - Telefono: {c['telefono']}") # format (formato de texto)
     print()
 
 def buscar_contacto(contactos):
