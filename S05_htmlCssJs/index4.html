@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perfil Personal — Miguel</title>
+	<!-- Bootstrap CSS -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa6mY5Yk2Q8z+K7Q5bQ5qv1Kq1Z6c1e2Y9d1m3xv9Qp9g7F6y0W1p2X2Y3Z" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<style>
+		.profile-img { width:150px; height:150px; object-fit:cover; }
+		.card-quiet { background-color: #f8f9fa; }
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="#">Miguel C.</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#sobre-mi-id">Sobre mí</a></li>
+						<li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+						<li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+						<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="py-4">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-8">
+					<!-- Sobre mí -->
+					<section id="sobre-mi-id" class="mb-4">
+						<div class="card shadow-sm">
+							<div class="card-body d-flex flex-column flex-md-row align-items-center gap-3">
+								<img src="https://via.placeholder.com/300" alt="Foto de perfil de Miguel" class="rounded-circle profile-img shadow-sm">
+								<div>
+									<h1 class="h4 mb-1">Miguel C. — Desarrollador y Educador</h1>
+									<p class="text-muted mb-2">Pasión por enseñar programación y crear soluciones sencillas.</p>
+									<p class="mb-1">Hola, me llamo <strong>Miguel</strong>. Soy <em>desarrollador</em> y <em>educador</em> con experiencia en Python y educación técnica. Me gusta trabajar con estudiantes y equipos para transformar ideas en código.</p>
+									<p class="mb-1">Actualmente disponible para <span class="badge bg-primary">mentoría</span> y proyectos educativos.</p>
+									<address class="mb-0 text-muted">Madrid, España · <a href="mailto:miguel@example.com">miguel@example.com</a></address>
+									<small class="text-muted d-block mt-2">Última actualización: <time datetime="2025-11-22">22 de noviembre de 2025</time></small>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Experiencia -->
+					<section id="experiencia" class="mb-4">
+						<h2 class="h5 mb-3">Experiencia Profesional</h2>
+						<div class="card mb-3">
+							<div class="card-body">
+								<h3 class="h6">Profesor de Programación — Bootcamp Python <small class="text-muted">2019 — presente</small></h3>
+								<p>Diseño planes de estudio, doy clases y preparo ejercicios prácticos.</p>
+								<details>
+									<summary class="mb-2">Responsabilidades destacadas</summary>
+									<ul>
+										<li>Creación de ejercicios interactivos</li>
+										<li>Revisión de proyectos finales</li>
+										<li>Mentoría individual</li>
+									</ul>
+								</details>
+							</div>
+						</div>
+
+						<div class="card mb-3 card-quiet">
+							<div class="card-body">
+								<h3 class="h6">Desarrollador Freelance <small class="text-muted">2016 — 2019</small></h3>
+								<p>Proyectos de automatización y pequeñas aplicaciones web.</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Habilidades -->
+					<section id="habilidades" class="mb-4">
+						<h2 class="h5 mb-3">Habilidades</h2>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<h6>Técnicas</h6>
+								<p class="mb-1"><strong>Lenguajes:</strong> Python, JavaScript (básico), HTML</p>
+								<p class="mb-1"><strong>Herramientas:</strong> Git, Docker, VS Code</p>
+							</div>
+							<div class="col-md-6 mb-3">
+								<h6>Competencias</h6>
+								<ul>
+									<li>Enseñanza y comunicación</li>
+									<li>Diseño de curricula</li>
+									<li>Revisión de código</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="mb-2">
+							<label class="form-label">Progreso en Python</label>
+							<div class="progress" role="progressbar" aria-label="Progreso en Python" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar bg-success" style="width:85%">85%</div>
+							</div>
+						</div>
+						<div>
+							<label class="form-label">Confianza en enseñanza</label>
+							<div class="progress" role="progressbar" aria-label="Confianza en enseñanza" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+								<div class="progress-bar bg-info" style="width:90%">90%</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- Formación -->
+					<section id="formacion" class="mb-4">
+						<h2 class="h5 mb-3">Formación</h2>
+						<ol>
+							<li>Grado en Ingeniería Informática — Universidad X</li>
+							<li>Curso de Formación Docente</li>
+							<li>Certificaciones en Python</li>
+						</ol>
+					</section>
+
+					<!-- Proyectos -->
+					<section id="proyectos" class="mb-4">
+						<h2 class="h5 mb-3">Proyectos Seleccionados</h2>
+						<div class="table-responsive">
+							<table class="table table-striped">
+								<caption>Resumen de proyectos</caption>
+								<thead>
+									<tr>
+										<th>Proyecto</th>
+										<th>Rol</th>
+										<th>Año</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Plataforma de ejercicios</td>
+										<td>Instructor / Desarrollador</td>
+										<td>2021</td>
+									</tr>
+									<tr>
+										<td>Script de automatización</td>
+										<td>Desarrollador</td>
+										<td>2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- Fragmentos y opiniones -->
+					<section class="mb-4">
+						<h2 class="h5 mb-3">Fragmentos de texto y código</h2>
+						<p>Uso de <abbr title="HyperText Markup Language">HTML</abbr>, <code>print('Hola')</code> y bloques preformateados:</p>
+						<pre class="bg-light p-3"><code>def saludar():
+		print("Hola mundo")
+</code></pre>
+						<p>Atajos de teclado: <kbd class="kbd">Ctrl</kbd>+<kbd class="kbd">C</kbd> para copiar.</p>
+						<p>Texto subrayado y superíndices: H<sub>2</sub>O, E=mc<sup>2</sup></p>
+					</section>
+
+					<section class="mb-4">
+						<h2 class="h5 mb-3">Opiniones</h2>
+						<blockquote class="blockquote ps-3 border-start">
+							<p>"Excelente profesor, explica con claridad y paciencia."</p>
+							<footer class="blockquote-footer">Alumno, <cite title="Bootcamp Python">Bootcamp Python</cite></footer>
+						</blockquote>
+					</section>
+
+					<section class="mb-4">
+						<h2 class="h5 mb-3">Accesos y multimedia</h2>
+						<p>Documento incrustado (ejemplo):</p>
+						<div class="ratio ratio-16x9">
+							<iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Documento"></iframe>
+						</div>
+					</section>
+
+				</div>
+
+				<!-- Sidebar -->
+				<aside class="col-lg-4">
+					<div class="card mb-3">
+						<div class="card-body">
+							<h3 class="h6">Contacto rápido</h3>
+							<p class="mb-1"><strong>Tel:</strong> <a href="tel:+34123456789">+34 123 456 789</a></p>
+							<p class="mb-1"><strong>Email:</strong> <a href="mailto:miguel@example.com">miguel@example.com</a></p>
+						</div>
+					</div>
+
+					<div class="card mb-3 card-quiet">
+						<div class="card-body">
+							<h3 class="h6">Extras</h3>
+							<p class="mb-0"><del>texto eliminado</del> <ins>texto insertado</ins></p>
+						</div>
+					</div>
+
+					<!-- Formulario resumido -->
+					<div class="card">
+						<div class="card-body">
+							<h3 class="h6">Envíame un mensaje</h3>
+							<form action="#" method="post">
+								<div class="mb-2">
+									<label for="nombre" class="form-label">Nombre</label>
+									<input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre">
+								</div>
+								<div class="mb-2">
+									<label for="email" class="form-label">Correo</label>
+									<input type="email" id="email" name="email" class="form-control" required>
+								</div>
+								<div class="mb-2">
+									<label for="asunto" class="form-label">Asunto</label>
+									<select id="asunto" name="asunto" class="form-select">
+										<optgroup label="General">
+											<option value="mentoria">Mentoría</option>
+											<option value="proyecto">Proyecto</option>
+										</optgroup>
+										<optgroup label="Otros">
+											<option value="otro">Otro</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="mb-2">
+									<label for="mensaje" class="form-label">Mensaje</label>
+									<textarea id="mensaje" name="mensaje" rows="3" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
+								</div>
+								<div class="d-flex gap-2">
+									<button type="submit" class="btn btn-primary">Enviar</button>
+									<button type="reset" class="btn btn-outline-secondary">Borrar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="bg-dark text-white py-3 mt-4">
+		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+			<p class="mb-0">© 2025 Miguel C. — <small class="text-muted text-white-50">Perfil de ejemplo creado con Bootstrap</small></p>
+			<nav>
+				<ul class="list-inline mb-0">
+					<li class="list-inline-item"><a class="link-light" href="#">GitHub</a></li>
+					<li class="list-inline-item"><a class="link-light" href="#">LinkedIn</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VZb6bK9S2n5g5Q5s9s5Q5s9s5Q5s9s5Q5s9s5Q5s" crossorigin="anonymous"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color:blueviolet
+}
+
+h3 {
+    color:blue
+}
+
+h4 {
+    color:chartreuse
+}
+
+article {
+    background-color: bisque;
+}
+
+.sobre-mi-class {
+    background-color: aquamarine;
+}
+
+#sobre-mi-id {
+    font-weight: 800;
+    font-size: x-large;
+}
