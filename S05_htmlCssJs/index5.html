@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perfil Personal — Miguel</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			// Tailwind config: use class-based dark mode
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							brand: {
+								500: '#0EA5A4'
+							}
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+	<div class="min-h-screen flex flex-col">
+		<header class="bg-white/60 dark:bg-gray-800/60 backdrop-blur sticky top-0 z-10 border-b border-gray-200 dark:border-gray-700">
+			<div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+				<div>
+					<h1 class="text-2xl font-semibold">Miguel C.</h1>
+					<p class="text-sm text-gray-600 dark:text-gray-300">Desarrollador & Educador — pasión por enseñar programación</p>
+				</div>
+				<div class="flex items-center gap-4">
+					<nav class="hidden sm:block">
+						<ul class="flex gap-4 text-sm">
+							<li><a class="hover:text-brand-500" href="#sobre-mi-id">Sobre mí</a></li>
+							<li><a class="hover:text-brand-500" href="#experiencia">Experiencia</a></li>
+							<li><a class="hover:text-brand-500" href="#habilidades">Habilidades</a></li>
+							<li><a class="hover:text-brand-500" href="#contacto">Contacto</a></li>
+						</ul>
+					</nav>
+					<button id="theme-toggle" aria-label="Alternar modo oscuro" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-sm">
+						<svg id="icon-sun" class="w-5 h-5 text-yellow-500 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36 6.36-1.42-1.42M7.05 6.05 5.63 4.63m12.02 0-1.42 1.42M7.05 17.95l-1.42 1.42"/></svg>
+						<svg id="icon-moon" class="w-5 h-5 text-gray-600 dark:text-gray-200" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+						<span class="sr-only">Modo oscuro</span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="flex-1 max-w-4xl mx-auto px-6 py-8 w-full">
+			<section id="sobre-mi-id" class="bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 mb-6 border border-gray-100 dark:border-gray-700">
+				<div class="sm:flex sm:items-center sm:gap-6">
+					<img class="w-32 h-32 rounded-full object-cover ring-2 ring-white dark:ring-gray-800 shadow" src="https://via.placeholder.com/300" alt="Foto de perfil de Miguel">
+					<div class="mt-4 sm:mt-0">
+						<h2 class="text-2xl font-semibold">Sobre mí</h2>
+						<p class="text-gray-600 dark:text-gray-300 mt-1">Hola, me llamo <strong>Miguel</strong>. Soy desarrollador y educador con experiencia en Python y educación técnica. Me gusta trabajar con estudiantes y equipos para transformar ideas en código.</p>
+						<p class="mt-3 text-sm text-gray-500 dark:text-gray-400">Actualmente disponible para <span class="bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded">mentoría</span> y proyectos educativos.</p>
+						<address class="not-italic mt-3 text-sm text-gray-600 dark:text-gray-400">Madrid, España · <a class="text-brand-500 hover:underline" href="mailto:miguel@example.com">miguel@example.com</a></address>
+						<p class="text-xs text-gray-400 mt-2">Última actualización: <time datetime="2025-11-22">22 de noviembre de 2025</time></p>
+					</div>
+				</div>
+			</section>
+
+			<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+				<section id="experiencia" class="lg:col-span-2 bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+					<h3 class="text-lg font-semibold mb-3">Experiencia Profesional</h3>
+					<article class="mb-4">
+						<h4 class="font-medium">Profesor de Programación — Bootcamp Python</h4>
+						<p class="text-sm text-gray-500 dark:text-gray-400">2019 — presente</p>
+						<p class="mt-2 text-gray-600 dark:text-gray-300">Diseño planes de estudio, doy clases y preparo ejercicios prácticos.</p>
+						<details class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+							<summary class="cursor-pointer">Responsabilidades destacadas</summary>
+							<ul class="mt-2 list-disc list-inside">
+								<li>Creación de ejercicios interactivos</li>
+								<li>Revisión de proyectos finales</li>
+								<li>Mentoría individual</li>
+							</ul>
+						</details>
+					</article>
+
+					<article>
+						<h4 class="font-medium">Desarrollador Freelance</h4>
+						<p class="text-sm text-gray-500 dark:text-gray-400">2016 — 2019</p>
+						<p class="mt-2 text-gray-600 dark:text-gray-300">Proyectos de automatización y pequeñas aplicaciones web.</p>
+					</article>
+				</section>
+
+				<aside id="habilidades" class="bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+					<h3 class="text-lg font-semibold mb-3">Habilidades</h3>
+					<dl class="text-sm text-gray-600 dark:text-gray-300">
+						<dt class="font-medium">Lenguajes</dt>
+						<dd class="mb-2">Python, JavaScript (básico), HTML</dd>
+						<dt class="font-medium">Herramientas</dt>
+						<dd class="mb-2">Git, Docker, VS Code</dd>
+					</dl>
+					<h4 class="mt-4 font-medium">Competencias</h4>
+					<ul class="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+						<li>Enseñanza y comunicación</li>
+						<li>Diseño de curricula</li>
+						<li>Revisión de código</li>
+					</ul>
+					<div class="mt-4">
+						<p class="text-sm text-gray-500 dark:text-gray-400">Progreso en Python</p>
+						<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden mt-1">
+							<div class="h-3 bg-brand-500" style="width:85%"></div>
+						</div>
+						<p class="text-sm text-gray-500 dark:text-gray-400 mt-3">Confianza en enseñanza</p>
+						<meter value="0.9" min="0" max="1" class="w-full h-2 mt-1" style="appearance:none"></meter>
+					</div>
+				</aside>
+			</div>
+
+			<section id="proyectos" class="mt-6 bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+				<h3 class="text-lg font-semibold mb-3">Proyectos Seleccionados</h3>
+				<div class="overflow-x-auto">
+					<table class="w-full text-sm table-auto border-collapse">
+						<caption class="sr-only">Resumen de proyectos</caption>
+						<thead>
+							<tr class="text-left text-gray-500 dark:text-gray-400">
+								<th class="pb-2">Proyecto</th>
+								<th class="pb-2">Rol</th>
+								<th class="pb-2">Año</th>
+							</tr>
+						</thead>
+						<tbody class="divide-y divide-gray-100 dark:divide-gray-700">
+							<tr>
+								<td class="py-2">Plataforma de ejercicios</td>
+								<td class="py-2">Instructor / Desarrollador</td>
+								<td class="py-2">2021</td>
+							</tr>
+							<tr>
+								<td class="py-2">Script de automatización</td>
+								<td class="py-2">Desarrollador</td>
+								<td class="py-2">2018</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section id="contacto" class="mt-6 bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+				<h3 class="text-lg font-semibold mb-3">Contacto</h3>
+				<form action="#" method="post" class="space-y-4">
+					<div>
+						<label for="nombre" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nombre</label>
+						<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="mt-1 block w-full rounded-md border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
+					</div>
+					<div>
+						<label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Correo</label>
+						<input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500" />
+					</div>
+					<div>
+						<label for="asunto" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Asunto</label>
+						<select id="asunto" name="asunto" class="mt-1 block w-full rounded-md border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm">
+							<optgroup label="General">
+								<option value="mentoria">Mentoría</option>
+								<option value="proyecto">Proyecto</option>
+							</optgroup>
+							<optgroup label="Otros">
+								<option value="otro">Otro</option>
+							</optgroup>
+						</select>
+					</div>
+					<div>
+						<label for="mensaje" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Mensaje</label>
+						<textarea id="mensaje" name="mensaje" rows="5" class="mt-1 block w-full rounded-md border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm" placeholder="Escribe tu mensaje aquí..."></textarea>
+					</div>
+					<div class="flex items-center gap-4">
+						<label class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300"><input type="checkbox" name="suscribir" class="rounded"/> Suscribirme al boletín</label>
+						<div class="flex items-center gap-2">
+							<label class="text-sm text-gray-600 dark:text-gray-300">Disponibilidad:</label>
+							<label class="text-sm dark:text-gray-300"><input type="radio" name="disponibilidad" value="mañana" class="mr-1"> Mañana</label>
+							<label class="text-sm dark:text-gray-300"><input type="radio" name="disponibilidad" value="tarde" class="mr-1"> Tarde</label>
+						</div>
+					</div>
+					<div class="flex gap-3">
+						<button type="submit" class="px-4 py-2 rounded-md bg-brand-500 text-white hover:bg-brand-600">Enviar</button>
+						<button type="reset" class="px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600">Borrar</button>
+					</div>
+				</form>
+			</section>
+
+			<section class="mt-6 bg-white dark:bg-gray-800 shadow-sm rounded-lg p-6 border border-gray-100 dark:border-gray-700">
+				<h3 class="text-lg font-semibold mb-2">Opiniones</h3>
+				<blockquote class="pl-4 border-l-4 border-gray-200 dark:border-gray-700 italic text-gray-600 dark:text-gray-300">"Excelente profesor, explica con claridad y paciencia." — <cite>Alumno, Bootcamp Python</cite></blockquote>
+			</section>
+
+			<section class="mt-6 text-sm text-gray-500 dark:text-gray-400">
+				<p>Accesos rápidos: <a class="text-brand-500 hover:underline" href="tel:+34123456789">+34 123 456 789</a> · <a class="text-brand-500 hover:underline" href="#">GitHub</a> · <a class="text-brand-500 hover:underline" href="#">LinkedIn</a></p>
+			</section>
+		</main>
+
+		<footer class="bg-white/60 dark:bg-gray-900/60 border-t border-gray-200 dark:border-gray-700">
+			<div class="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-600 dark:text-gray-400">© 2025 Miguel C. — Perfil de ejemplo creado con Tailwind</div>
+		</footer>
+	</div>
+
+	<script>
+		// Theme toggle: save preference in localStorage and toggle 'dark' on <html>
+		(function(){
+			const root = document.documentElement;
+			const toggle = document.getElementById('theme-toggle');
+			const sun = document.getElementById('icon-sun');
+			const moon = document.getElementById('icon-moon');
+			const stored = localStorage.getItem('theme');
+			const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const isDark = stored ? stored === 'dark' : prefersDark;
+			function apply(dark){
+				if(dark) root.classList.add('dark'); else root.classList.remove('dark');
+				sun.classList.toggle('hidden', !dark);
+				moon.classList.toggle('hidden', dark);
+				localStorage.setItem('theme', dark ? 'dark' : 'light');
+			}
+			apply(isDark);
+			toggle.addEventListener('click', ()=> apply(!root.classList.contains('dark')));
+		})();
+	</script>
+</body>
+</html>
