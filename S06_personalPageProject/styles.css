@@ -1,0 +1,276 @@
+/* =========================================================
+    ESTILOS GENERALES PARA ETIQUETAS HTML
+   ========================================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedores generales */
+section {
+    padding: 40px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+
+/* =========================================================
+   1. TÍTULOS Y ENCABEZADOS
+   ========================================================= */
+
+.title-main {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   2. PÁRRAFOS Y TEXTO
+   ========================================================= */
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #0077cc;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   3. TARJETAS (CARDS)
+   ========================================================= */
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 15px 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* =========================================================
+   4. BOTONES
+   ========================================================= */
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #005fcc;
+}
+
+.btn-outline {
+    border: 2px solid #333;
+    color: #333;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: #333;
+    color: white;
+}
+
+
+/* =========================================================
+   5. CONTENEDORES Y SECCIONES
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-light {
+    background: #f7f7f7;
+}
+
+.section-dark {
+    background: #222;
+    color: white;
+}
+
+
+/* =========================================================
+   6. NAVEGACIÓN (MENU)
+   ========================================================= */
+
+.navbar {
+    background: #111;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   7. IMÁGENES Y FOTO DE PERFIL
+   ========================================================= */
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+
+/* =========================================================
+   8. GALERÍA DE IMÁGENES
+   ========================================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   9. TABLAS
+   ========================================================= */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   10. FORMULARIOS
+   ========================================================= */
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    background: #28a745;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #1e7e34;
+}
