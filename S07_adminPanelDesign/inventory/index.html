@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Inventario</title>
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Inventario - Tienda</h3>
+            <div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">Agregar Producto</button>
+            </div>
+        </div>
+
+        <div class="card mb-3 p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div style="flex:1; margin-right:12px;">
+                    <div class="small text-muted">Bucar/Filtar producto</div>
+                    <input id="search" class="form-control" placeholder="Escribe el nombre o referencia del producto" type="text">
+                </div>
+                <div class="mb-3">
+                    <div class="btn-group" role="group" aria-label="Vista">
+                        <button class="btn btn-outline-secondary">Table</button>
+                        <button class="btn btn-outline-secondary">Cards</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="productsContainer"></div> <!-- Renderizar el contenido del inventario -->
+    </div>
+
+    <!-- Moda de creación de productos -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="productForm" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-2">
+                        <label class="form-label" for="">Nombre</label>
+                        <input id="pName" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label" for="">Referencia</label>
+                        <input id="pRef" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label" for="">Cantidad</label>
+                        <input id="pQty" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label" for="">URL imagen del producto</label>
+                        <input id="pPhoto" class="form-control" placeholder="https://....">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <div>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Modificar Producto</button>
+    </div> -->
+
+    <!-- Manipular el inventario -->
+    <div class="modal fade" id="moveModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="moveForm" class="modal-content">
+                <div class="modal-header">
+                    <h5>Registrar movimientos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input id="mProductId" type="hidden">
+                    <div class="mb-2">
+                        <label class="form-label" for="">Tipo</label>
+                        <select id="mType" class="form-select">
+                            <option value="in">Entrada</option>
+                            <option value="out">Salida</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label" for="">Cantidad</label>
+                        <input id="mQty" type="number" min="1" value="1" class="form-control" required>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label" for="">Nota (opcional)</label>
+                        <input id="mNote" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap 5.3.8 JS con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script></body>
+    <script src="app.js"></script>
+</html>
