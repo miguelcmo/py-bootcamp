@@ -1,0 +1,1 @@
+Design of an admin panel of Inventory Manager App using Vanilla CSS or Native CSS

@@ -106,14 +106,14 @@ function escapeHtml(unsafe){
 }
 
 // Demo
-if(products.length === 0){
-    products = [
-        {id:'p1', name:'Camiseta básica', ref:'CB-001', qty:10, photo:''},
-        {id:'p2', name:'Taza cerámica', ref:'TZ-122', qty:2, photo:''},
-        {id:'p3', name:'Libreta A5', ref:'LB-55', qty:5, photo:''}
-    ];
-    localStorage.setItem(KEY, JSON.stringify(products));
-}
+// if(products.length === 0){
+//     products = [
+//         {id:'p1', name:'Camiseta básica', ref:'CB-001', qty:10, photo:''},
+//         {id:'p2', name:'Taza cerámica', ref:'TZ-122', qty:2, photo:''},
+//         {id:'p3', name:'Libreta A5', ref:'LB-55', qty:5, photo:''}
+//     ];
+//     localStorage.setItem(KEY, JSON.stringify(products));
+// }
 renderProducts();
 
 // funciones globales
