@@ -264,9 +264,9 @@ SELECT
 FROM Album
 JOIN Artist ON Album.ArtistId = Artist.ArtistId
 WHERE (SELECT COUNT(*) FROM Track WHERE Track.AlbumId = Album.AlbumId) > 
-      (SELECT AVG(TrackCount) FROM (
-          SELECT COUNT(*) AS TrackCount FROM Track GROUP BY AlbumId
-      ))
+    (SELECT AVG(TrackCount) FROM (
+        SELECT COUNT(*) AS TrackCount FROM Track GROUP BY AlbumId
+    ))
 LIMIT 20;
 
 -- STEP 33: Subquery in FROM clause (derived table)
