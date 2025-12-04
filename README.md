@@ -378,6 +378,9 @@ Los estudiantes trabajaran en equipos para desarrollar uno de los siguientes pro
 - [Bootstrap Documentation](https://getbootstrap.com) - Framework CSS
 
 ### Libros
+
+[![Python Crash Course](S00_classPresentations/asstes/python-crash-course-book.webp)](https://nostarch.com/pythoncrashcourse3e)
+
 - "Python Crash Course" - Eric Matthes
 - "Flask Web Development" - Miguel Grinberg
 - "Automate the Boring Stuff with Python" - Al Sweigart
