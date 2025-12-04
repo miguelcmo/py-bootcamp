@@ -379,11 +379,14 @@ Los estudiantes trabajaran en equipos para desarrollar uno de los siguientes pro
 
 ### Libros
 
+- "Python Crash Course" - Eric Matthes
 [![Python Crash Course](S00_classPresentations/asstes/python-crash-course-book.webp)](S00_classPresentations/Eric_Matthes_Python_Crash_Course_A_Hands.pdf)
 
-- "Python Crash Course" - Eric Matthes
 - "Flask Web Development" - Miguel Grinberg
+[![Flask Web Development](S00_classPresentations\asstes\flask-web-dev-book.jpg)](S00_classPresentations\Flask_Web_Development_Developing.pdf)
+
 - "Automate the Boring Stuff with Python" - Al Sweigart
+[![Automate the Boring Stuff with Python](S00_classPresentations\asstes\automate-the-boring-stuff-book.webp)](S00_classPresentations\automatetheboringstuffwithpython_new.pdf)
 
 ## Contribuir
 
