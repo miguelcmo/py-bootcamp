@@ -379,7 +379,7 @@ Los estudiantes trabajaran en equipos para desarrollar uno de los siguientes pro
 
 ### Libros
 
-[![Python Crash Course](S00_classPresentations/asstes/python-crash-course-book.webp)](https://nostarch.com/pythoncrashcourse3e)
+[![Python Crash Course](S00_classPresentations/asstes/python-crash-course-book.webp)](S00_classPresentations/Eric_Matthes_Python_Crash_Course_A_Hands.pdf)
 
 - "Python Crash Course" - Eric Matthes
 - "Flask Web Development" - Miguel Grinberg
