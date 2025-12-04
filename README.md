@@ -26,16 +26,20 @@ Bootcamp intensivo de Python disenado para estudiantes sin experiencia previa en
 ## Estructura del Programa
 
 ### Informacion General
-- **Duracion total:** 60 horas
+- **Duracion total:** 16 sesiones
 - **Modalidad:** Hibrida (Virtual + Presencial)
-  - 8 sesiones virtuales (32 horas) - Teoria y conceptos
-  - 6 sesiones presenciales (24 horas) - Desarrollo de proyectos
-  - 1 sesion final (4 horas) - Presentaciones y Demo Day
+- **Contenido:**
+  - Fundamentos de Python (S00-S03)
+  - Desarrollo Web Frontend (S05-S08)
+  - Desarrollo Web Backend con Flask (S09-S13)
+  - Proyecto Final y Deployment (S14-S15)
 
 ## Contenido del Repositorio
 
 ```
 pythonBootcamp/
+│
+├── S00_classPresentations/         # Presentaciones en PDF de las sesiones
 │
 ├── S01_variablesAndDataTypes/
 │   ├── 01variables.py              # Variables y nomenclatura
@@ -53,103 +57,146 @@ pythonBootcamp/
 ├── S03_listsAndDictionaries/
 │   ├── 01lists.py                  # Listas y metodos
 │   ├── 02dictionaries.py           # Diccionarios
+│   ├── 03tuplesAndSets.py          # Tuplas y sets
 │   └── x[1-5]codeChallenge.py      # Desafios de codigo
+│
+├── S05_htmlCssJs/                  # HTML, CSS y JavaScript basicos
+│   └── index[1-5].html             # Ejemplos progresivos
+│
+├── S06_personalPageProject/        # Proyecto de pagina personal
+│   └── htmlProject/                # Proyecto HTML/CSS
+│
+├── S07_adminPanelBootstrap/        # Panel de administracion con Bootstrap
+│   └── inventoryManager/           # Sistema de gestion con Bootstrap
+│
+├── S08_adminPanelVanillaCSS/       # Panel de administracion con CSS puro
+│   └── tasksManager/               # Sistema de gestion con Vanilla CSS
+│
+├── S09_introToFlask/               # Introduccion a Flask
+│   └── app.py                      # Primera aplicacion Flask
+│
+├── S10_flaskTemplateRendering/     # Renderizado de templates
+│   ├── basic/                      # Ejemplos basicos
+│   └── intermediate/               # Ejemplos intermedios
+│
+├── S11_flaskTemplatesAndCss/       # Templates y CSS en Flask
+│   ├── proficient/                 # Nivel avanzado
+│   └── specialist/                 # Nivel especialista
+│
+├── S12_flaskAndSqlite/             # Flask con bases de datos SQLite
+│   ├── sqlite/                     # Integracion SQLite
+│   └── ultimate/                   # Proyecto completo
+│
+├── S13_sqlDatabases/               # Bases de datos SQL
+│   ├── Chinook.db                  # Base de datos de ejemplo
+│   └── queries.sql                 # Consultas SQL
+│
+├── S14_inventoryApp/               # Aplicacion de inventario completa
+│   ├── app.py                      # Aplicacion principal
+│   ├── api/                        # API REST
+│   ├── static/                     # Archivos estaticos
+│   ├── templates/                  # Templates HTML
+│   └── README.md                   # Documentacion del proyecto
+│
+├── S15_pythonRoadmap/              # Roadmap de Python para desarrollo web
+│   └── roadmap_python_web.md       # Guia completa de aprendizaje
 │
 └── bootcamp_python_programa_completo.md  # Programa detallado
 ```
 
 ## Programa por Fases
 
-### Fase 1: Fundamentos de Python (Sesiones 1-4)
+### Fase 1: Fundamentos de Python (Sesiones 0-3)
 
-**Sesion 1 - Virtual: Introduccion a Python y Primeros Pasos**
-- Variables y tipos de datos
-- Strings y manipulacion
-- Input del usuario
+**Sesion 0 - Presentaciones**
+- Presentaciones del instructor y estudiantes
+- Introduccion al bootcamp
+- Recursos y materiales
 
-**Sesion 2 - Virtual: Estructuras de Control**
+**Sesion 1 - Variables y Tipos de Datos**
+- Variables y nomenclatura
+- Palabras reservadas de Python
+- Valores booleanos y operadores logicos
+- Funciones basicas
+- Entrada de usuario
+
+**Sesion 2 - Estructuras de Control**
 - Condicionales (if, elif, else)
-- Bucles (for, while)
-- Listas basicas
+- Bucle for
+- Range y bucle while
+- Desafios de codigo
 
-**Sesion 3 - Virtual: Estructuras de Datos**
+**Sesion 3 - Estructuras de Datos**
+- Listas y metodos
 - Diccionarios
-- Tuplas
-- Sets
-- Estructuras anidadas
+- Tuplas y sets
+- Desafios de codigo
 
-**Sesion 4 - Virtual: Funciones y Modularizacion**
-- Definicion de funciones
-- Parametros y argumentos
-- Modulos y paquetes
-- Lambda y funciones de orden superior
+### Fase 2: Desarrollo Web Frontend (Sesiones 5-8)
 
-### Fase 2: Programacion Orientada a Objetos (Sesiones 5-6)
+**Sesion 5 - HTML, CSS y JavaScript**
+- Fundamentos de HTML
+- Estilos con CSS
+- Introduccion a JavaScript
+- Ejemplos progresivos
 
-**Sesion 5 - Virtual: Introduccion a POO**
-- Clases y objetos
-- Atributos y metodos
-- Constructor `__init__`
+**Sesion 6 - Proyecto de Pagina Personal**
+- Creacion de pagina personal
+- Estructura HTML
+- Estilos personalizados
 
-**Sesion 6 - Virtual: POO Avanzada**
-- Herencia
-- Encapsulamiento
-- Polimorfismo
-- Metodos especiales
+**Sesion 7 - Panel de Administracion con Bootstrap**
+- Framework Bootstrap
+- Componentes y grid system
+- Sistema de gestion de inventario
+- Diseno responsivo
 
-### Fase 3: Desarrollo de Proyecto (Sesiones 7-9)
+**Sesion 8 - Panel de Administracion con Vanilla CSS**
+- CSS puro avanzado
+- Flexbox y Grid
+- Sistema de gestion de tareas
+- Buenas practicas
 
-**Sesion 7 - Presencial: Inicio del Proyecto**
-- Definicion y planificacion
-- Setup del entorno
-- Modelo de datos
+### Fase 3: Desarrollo Web Backend (Sesiones 9-13)
 
-**Sesion 8 - Virtual: Archivos, Excepciones y Testing**
-- Manejo de archivos (JSON, CSV)
-- Try-except
-- Testing con pytest
+**Sesion 9 - Introduccion a Flask**
+- Fundamentos de Flask
+- Routing basico
+- Primera aplicacion web
 
-**Sesion 9 - Presencial: Desarrollo del Backend**
-- Logica de negocio
-- Persistencia de datos
-- CRUD completo
+**Sesion 10 - Flask Template Rendering**
+- Motor de templates Jinja2
+- Variables en templates
+- Ejemplos basicos e intermedios
 
-### Fase 4: Desarrollo Web (Sesiones 10-16)
+**Sesion 11 - Flask Templates y CSS**
+- Integracion de CSS en Flask
+- Templates avanzados
+- Nivel profesional y especialista
 
-**Sesion 10 - Virtual: Introduccion a Flask**
-- Fundamentos web
-- HTML y CSS basicos
-- Routing y templates
+**Sesion 12 - Flask y SQLite**
+- Integracion de bases de datos
+- CRUD con SQLite
+- Proyecto completo
 
-**Sesion 11 - Virtual: Flask Intermedio**
-- Formularios
-- Sesiones
-- Integracion con backend
+**Sesion 13 - Bases de Datos SQL**
+- SQL avanzado
+- Consultas complejas
+- Base de datos Chinook
 
-**Sesion 12 - Virtual: Base de Datos**
-- SQL basico
-- SQLAlchemy ORM
-- Migraciones
+### Fase 4: Proyecto Final y Deployment (Sesiones 14-15)
 
-**Sesion 13 - Presencial: Desarrollo del Frontend**
-- Interfaces de usuario
-- Templates con Jinja2
-- Estilizado con Bootstrap
-
-**Sesion 14 - Presencial: Integracion**
-- Conectar todos los componentes
-- Funcionalidades avanzadas
-- Testing integral
-
-**Sesion 15 - Presencial: Deployment**
-- Pulido final
-- Documentacion
+**Sesion 14 - Aplicacion de Inventario Completa**
+- Aplicacion web full-stack
+- API REST
+- Frontend y backend integrados
 - Deployment en produccion
 
-**Sesion 16 - Presencial: Demo Day**
-- Presentaciones finales
-- Feedback y cierre
-- Entrega de certificados
+**Sesion 15 - Roadmap de Python**
+- Roadmap completo de desarrollo web
+- Mejores practicas
+- Recursos adicionales
+- Siguientes pasos en el aprendizaje
 
 ## Empezando
 
@@ -365,4 +412,6 @@ Este proyecto esta bajo la Licencia MIT - ver el archivo LICENSE para mas detall
 
 **Dale una estrella a este repositorio si te resulta util!**
 
-**Listo para comenzar tu viaje en Python?** Empieza con [S01_variablesAndDataTypes/01variables.py](S01_variablesAndDataTypes/01variables.py)
+**Listo para comenzar tu viaje en Python?**
+- Revisa las presentaciones en [S00_classPresentations/](S00_classPresentations/)
+- Empieza a programar con [S01_variablesAndDataTypes/01variables.py](S01_variablesAndDataTypes/01variables.py)
