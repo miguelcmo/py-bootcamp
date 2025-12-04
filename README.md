@@ -385,11 +385,11 @@ Los estudiantes trabajaran en equipos para desarrollar uno de los siguientes pro
 
 - "Flask Web Development" - Miguel Grinberg
 
-[![Flask Web Development](S00_classPresentations\asstes\flask-web-dev-book.jpg)](S00_classPresentations\Flask_Web_Development_Developing.pdf)
+[![Flask Web Development](S00_classPresentations/asstes/flask-web-dev-book.jpg)](S00_classPresentations/Flask_Web_Development_Developing.pdf)
 
 - "Automate the Boring Stuff with Python" - Al Sweigart
 
-[![Automate the Boring Stuff with Python](S00_classPresentations\asstes\automate-the-boring-stuff-book.webp)](S00_classPresentations\Automate_the_boring_stuff_with_Python.pdf)
+[![Automate the Boring Stuff with Python](S00_classPresentations/asstes/automate-the-boring-stuff-book.webp)](S00_classPresentations/Automate_the_boring_stuff_with_Python.pdf)
 
 ## Contribuir
 
